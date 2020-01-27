@@ -1,0 +1,29 @@
+{
+  "name": "@nexus-switchboard/nexus-conn-opslevel",
+  "version": "0.0.1",
+  "description": "Exposes a route that will return a simple json response when requested.  Useful for healthchecks.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "debug": "^4.1.1",
+    "graphql-request": "^1.8.2",
+    "@nexus-switchboard/nexus-extend": "^0.4.4"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.5",
+    "@types/debug": "^4.1.5",
+    "typescript": "^3.7.5",
+    "tslint": "^6.0.0"
+  }
+}
