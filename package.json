@@ -1,6 +1,7 @@
 {
   "name": "@nexus-switchboard/nexus-conn-opslevel",
   "version": "0.0.1",
+  "keywords": ["nexus-connection"],
   "description": "Exposes a route that will return a simple json response when requested.  Useful for healthchecks.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
