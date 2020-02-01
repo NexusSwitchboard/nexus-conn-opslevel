@@ -1,7 +1,9 @@
 {
   "name": "@nexus-switchboard/nexus-conn-opslevel",
   "version": "0.0.1",
-  "keywords": ["nexus-connection"],
+  "keywords": [
+    "nexus-connection"
+  ],
   "description": "Exposes a route that will return a simple json response when requested.  Useful for healthchecks.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -19,7 +21,7 @@
     "assert": "^2.0.0",
     "debug": "^4.1.1",
     "graphql-request": "^1.8.2",
-    "@nexus-switchboard/nexus-extend": "^0.4.4"
+    "@nexus-switchboard/nexus-extend": "^0.4"
   },
   "devDependencies": {
     "@types/node": "^12.7.5",
