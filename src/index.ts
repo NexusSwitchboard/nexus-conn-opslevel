@@ -1,5 +1,5 @@
 import {GraphQLClient} from "graphql-request";
-import {Connection, ConnectionConfig, getNestedVal} from "@nexus-switchboard/nexus-extend";
+import {Connection, ConnectionConfig, GlobalConfig, getNestedVal} from "@nexus-switchboard/nexus-extend";
 
 type OpsLevelService = Record<string, any>;
 
@@ -75,6 +75,6 @@ export class OpsLevelConnection extends Connection {
     }
 }
 
-export default function createConnection(cfg: ConnectionConfig): Connection {
-    return new OpsLevelConnection(cfg);
+export default function createConnection(cfg: ConnectionConfig, globalCfg: GlobalConfig): Connection {
+    return new OpsLevelConnection(cfg, globalCfg);
 }
