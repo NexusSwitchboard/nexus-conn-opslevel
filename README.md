@@ -1,13 +1,19 @@
-# Liveness
-Simple  module that implements only one endpoint for  K8S healtcheck.
+# Nexus Connection - Opslevel
 
-## Routes
+Nexus is a framework for connecting different services together that is made up of modules and connections.  This repo
+is a Opslevel connection that can plug into any Nexus-based application.
 
-### /up
-Called by k8s to ensure the  service is still working
+For full documentation on how to use this, visit the the [Nexus documentation here](https://nexus-switchboard.dev/content/connections/opslevel)
 
-*Response*
+## Development
 
-    {
-        "message": "up"
-    }    
+To make changes to this repo, fork and clone into a directory.  Then:
+
+1. `npm install`
+2. `npm run build`
+3. `npm link`
+
+The last step hooks your local npm cache to this project instead of pulling from the public NPM registry.   That way, in the project that uses this package, you can run (in the *other* project's directory, not this one):
+
+`npm link @nexus-switchboard/nexus-conn-opslevel`
+
